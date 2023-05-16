@@ -95,37 +95,11 @@ const Header = ({ history }) => {
                   </IconButton>
                 </Link>
               </Grid>
-              <Grid item>
-                <Link to="/ads">
-                  <IconButton>
-                    <FontAwesomeIcon
-                      icon={faHandsHelping}
-                      style={currentTab(history, "/ads")}
-                    />
-                  </IconButton>
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link to="/jobs-and-placements">
-                  <IconButton>
-                    <FontAwesomeIcon
-                      icon={faUserGraduate}
-                      style={currentTab(history, "/jobs-and-placements")}
-                    />
-                  </IconButton>
-                </Link>
-              </Grid>
             </Grid>
           </div>
 
           <div className="header-part-3">
-            <TextField
-              id="outlined-password-input"
-              label="Search"
-              type="text"
-              size="small"
-              variant="outlined"
-            />
+
             <IconButton onClick={handleMoreOption}>
               <MoreVertIcon />
             </IconButton>
@@ -165,14 +139,6 @@ const Header = ({ history }) => {
                 }}
               >
                 Settings & Privacy
-              </MenuItem>
-              <MenuItem
-                onClick={() => {
-                  handleFeedback()
-                  handleClose()
-                }}
-              >
-                Give Feedback
               </MenuItem>
               <MenuItem
                 onClick={() => {

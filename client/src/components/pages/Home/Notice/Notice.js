@@ -14,6 +14,7 @@ export const Notice = () => {
   const noticeContext = useContext(NoticeContext)
   useEffect(() => {
     noticeContext.getNotices()
+    console.log(noticeContext.notice);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -37,11 +38,7 @@ export const Notice = () => {
                         Notice no.{index + 100}
                       </Typography>
                     </Grid>
-                    <Grid item>
-                      <Typography variant="caption">
-                        {new Date(not.createdAt).toDateString()}
-                      </Typography>
-                    </Grid>
+
                   </Grid>
                   <Typography color="primary">{not.title}</Typography>
                   <Typography variant="body1">{not.description}</Typography>

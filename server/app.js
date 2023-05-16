@@ -36,11 +36,6 @@ app.get("/", (req, res) => {
 // database connectivity
 mongoose.connect(
   MONGO_URI,
-  {
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  },
   (err, response) => {
     if (err) {
       console.log(err)

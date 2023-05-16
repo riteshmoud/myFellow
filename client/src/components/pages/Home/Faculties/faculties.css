@@ -1,0 +1,47 @@
+.main-faculty-div{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-bottom: 1rem;
+    overflow: auto;
+}
+
+.faculty-div{
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    background-color:#E8E8E8;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+img{
+    width: 100%;
+}
+
+.img-div{
+    width: 100%;
+}
+
+h2{
+    margin-bottom: 1rem;
+    margin-top: 1rem !important;
+}
+
+.faculty-info-div{
+    padding: 0.8rem;
+}
+
+.faculty-email-div{
+    background-color: blue;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+h4{
+    margin-bottom: 0.8rem;
+}

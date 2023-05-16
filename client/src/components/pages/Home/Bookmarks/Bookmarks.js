@@ -65,22 +65,6 @@ export const Bookmarks = () => {
                     Blogs
                   </Button>
                 </Grid>
-                <Grid>
-                  <Button
-                    color={typeOf === "ads" ? "primary" : "default"}
-                    onClick={() => handleBtnClick("ads")}
-                  >
-                    Ads
-                  </Button>
-                </Grid>
-                <Grid>
-                  <Button
-                    color={typeOf === "job" ? "primary" : "default"}
-                    onClick={() => handleBtnClick("job")}
-                  >
-                    Jobs
-                  </Button>
-                </Grid>
               </Grid>
               <Divider
                 className="mt-1 mb-3"

@@ -41,7 +41,7 @@ export const Profile = ({ match }) => {
     const fetchUserDetails = async (userId) => {
       try {
         await userContext.getUserById(userId)
-      } catch (error) {}
+      } catch (error) { }
     }
     fetchUserDetails(match.params.userId)
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -220,7 +220,7 @@ export const Profile = ({ match }) => {
                       </Typography>
 
                       <Typography variant="body2">
-                        Gautam Buddha University
+                        MIT World Peace University
                       </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -304,9 +304,8 @@ export const Profile = ({ match }) => {
                           <Button
                             variant="text"
                             fullWidth
-                            color={`${
-                              type === "bookmark" ? "primary" : "default"
-                            }`}
+                            color={`${type === "bookmark" ? "primary" : "default"
+                              }`}
                             onClick={() => {
                               setData(null)
                               handleClick("bookmark")

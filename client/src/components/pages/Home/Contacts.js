@@ -84,11 +84,6 @@ export const Contacts = () => {
               <Grid item>
                 <Typography variant="h6">Fellows</Typography>
               </Grid>
-              <Grid>
-                <IconButton size="small">
-                  <SearchIcon />
-                </IconButton>
-              </Grid>
             </Grid>
             <List component="nav">
               {userContext.user.friendList.map((user, i) => {

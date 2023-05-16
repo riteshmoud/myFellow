@@ -7,7 +7,6 @@ export const HomeRightBar = () => {
   return (
     <div className="home-right-bar">
       <Grid container direction="column" justify="center">
-        <PollCard />
         <Contacts />
       </Grid>
     </div>

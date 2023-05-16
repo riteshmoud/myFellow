@@ -61,7 +61,7 @@ export const InputBox = () => {
           blog={undefined}
         />
       )}
-      {showAds && (
+      {/* {showAds && (
         <AdsModal
           modalTitle="Create ads"
           show={showAds}
@@ -78,7 +78,7 @@ export const InputBox = () => {
           poll={undefined}
           handleModal={handleModalPoll}
         />
-      )}
+      )} */}
       <Paper elevation={3} variant="elevation" className="p-3 mb-3">
         <Grid
           container
@@ -88,20 +88,6 @@ export const InputBox = () => {
           alignItems="center"
         >
           <Grid item xs={1}>
-            <Avatar
-              alt={authContext.user.name}
-              src={`${API}/pic/user/${authContext.user._id}`}
-            />
-          </Grid>
-          <Grid item xs={10}>
-            <Fab
-              variant="extended"
-              disabled
-              style={{ width: "100%" }}
-              size="medium"
-            >
-              {`What's on your mind? ${authContext.user.name}`}
-            </Fab>
           </Grid>
         </Grid>
 
@@ -127,7 +113,7 @@ export const InputBox = () => {
               Write Blog
             </Button>
           </Grid>
-          <Grid item>
+          {/* <Grid item>
             <Button onClick={handleModalAds} startIcon={<BrokenImageIcon />}>
               Post Ad
             </Button>
@@ -136,7 +122,7 @@ export const InputBox = () => {
             <Button onClick={handleModalPoll} startIcon={<PollIcon />}>
               Poll
             </Button>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Paper>
     </>

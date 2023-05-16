@@ -49,3 +49,8 @@ export const POLL_CREATE = "poll_create"
 export const ADS_LOADING = "ads_loading"
 export const ADS_GET_ALL = "ads_get_all"
 export const ADS_ERROR = "ads_error"
+
+//CLUBS
+export const CLUBS_LOADING = "clubs_loading"
+export const CLUBS_ERROR = "clubs_error"
+export const CLUBS_GET = "clubs_get"

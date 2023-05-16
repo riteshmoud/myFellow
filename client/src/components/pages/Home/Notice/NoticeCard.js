@@ -21,7 +21,7 @@ export const NoticeCard = () => {
           ) : (
             noticeContext.notice.map((not, index) => {
               return (
-                <Carousel.Item key={index}>
+                <Carousel.Item key={index} >
                   <Grid
                     container
                     className="mt-3"
@@ -44,8 +44,8 @@ export const NoticeCard = () => {
                       </Typography>
                     </Grid>
                     <Grid item xs={12}>
-                      <Grid container justify="flex-end">
-                        <Button size="small">Link</Button>
+                      <Grid style={{ display: "flex", justifyContent: "flex-end" }}>
+                        <Button style={{ backgroundColor: "blue", color: "white", }} size="small" href={not.link} target="_blank">Link</Button>
                       </Grid>
                     </Grid>
                   </Grid>

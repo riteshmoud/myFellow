@@ -72,12 +72,7 @@ export const FriendsTab = () => {
                 justify="flex-end"
                 alignItems="flex-end"
               >
-                <Grid item>
-                  <TextField placeholder="Search name..." />
-                </Grid>
-                <Grid item>
-                  <FontAwesomeIcon icon={faSearch} />
-                </Grid>
+
               </Grid>
             </Grid>
           </Grid>

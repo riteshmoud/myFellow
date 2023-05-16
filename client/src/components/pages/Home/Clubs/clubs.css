@@ -1,0 +1,48 @@
+.main-club-div{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-bottom: 1rem;
+    overflow: auto;
+}
+
+.club-div{
+    margin-bottom: 1rem;
+    background-color:#E8E8E8;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+img{
+    width: 100%;
+}
+
+.img-div{
+    width: 100%;
+}
+
+h2{
+    margin-bottom: 1rem;
+    margin-top: 1rem !important;
+}
+
+.contact-div>div{
+    background-color: blue;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    border-radius: 10px;
+}
+
+h4{
+    margin-bottom: 0.8rem;
+}
+
+p,.contact-div{
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.contact-div{
+    display: flex;
+    justify-content: space-around;
+}

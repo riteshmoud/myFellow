@@ -63,22 +63,40 @@ export const HomeSideBar = () => {
               primary={<Typography variant="button">Fellows</Typography>}
             />
           </ListItem>
-          <ListItem button>
+          <ListItem button onClick={() => {
+            history.push("/faculties")
+          }}>
             <ListItemIcon>
               <SupervisedUserCircleRoundedIcon />
             </ListItemIcon>
             <ListItemText
-              primary={<Typography variant="button">Groups</Typography>}
+              primary={<Typography variant="button">Faculties</Typography>}
             />
           </ListItem>
-          <ListItem button>
+          {/* <ListItem button>
             <ListItemIcon>
               <EventNoteRoundedIcon />
             </ListItemIcon>
             <ListItemText
               primary={<Typography variant="button">Events</Typography>}
             />
+          </ListItem> */}
+
+          <ListItem
+            button
+            onClick={() => {
+              history.push("/clubs")
+            }}
+          >
+            <ListItemIcon>
+              <EventNoteRoundedIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary={<Typography variant="button">Clubs</Typography>}
+            />
           </ListItem>
+
+
           <ListItem
             button
             onClick={() => {
